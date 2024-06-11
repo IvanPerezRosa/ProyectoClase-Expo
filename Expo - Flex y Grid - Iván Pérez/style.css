@@ -1,0 +1,254 @@
+body{
+    background-image:url(Material/img/fondo.jpg);
+    margin: 0%;
+}
+
+/*Mobile First*/
+
+#Div_Principal{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "indice"
+    "introduccion"
+    "arquitectura"
+    "pabellones"
+    "pabellonesdestacados"
+    "seguridad"
+    "footer";
+}
+
+#Encabezado{
+    grid-area: titulo;
+}
+
+#Indice{
+    grid-area: indice;
+}
+
+#Introduccion{
+    grid-area: introduccion;
+}
+
+#Arquitectura{
+    grid-area: arquitectura;
+}
+
+#Pabellones{
+    grid-area: pabellones;
+}
+
+#PD{
+    grid-area: pabellonesdestacados;
+}
+
+#Seguridad{
+    grid-area: seguridad;
+}
+ 
+
+
+#Encabezado{
+    border-bottom: solid rgb(111, 111, 111);
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    font-family: Versalita;
+    font-weight: bold;
+    margin-top:4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 2%;
+    background-color: #223A5E;
+    span{
+        font-size: 1em;
+    }
+}
+
+
+
+#Indice{
+    margin-top:4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 2%;
+    background-color: #223A5E;
+    border: solid rgb(111, 111, 111) 2px;
+    color: white;
+
+}
+
+#I{
+    text-align: center;
+}
+
+a{
+    color: #F6D155;
+}
+
+#TituloI{
+    color: rgb(255, 255, 255);
+    padding-top: 5%;
+    padding-bottom: 0%;
+    text-align: center;
+    
+}
+
+#PIndice{
+    color: #F6D155;
+    margin-top: 5%;
+}
+
+.numeros{
+    color: white;
+    padding-left: 7vw;
+    
+}
+
+#H{
+    color: white;
+    padding-left: 17vw;
+}
+
+#Introduccion{
+    margin-top: 3%;
+}
+
+.Titulos{
+    border-bottom: solid brown 1px;
+    color: brown;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.Texto{
+    margin-left: 3%;
+    text-align: justify;
+    margin-right: 3%;
+}
+
+.Imagenes{
+    text-align: center;
+}
+
+img{
+    border: solid grey;
+}
+
+.ITabla{
+    text-align: center;
+    width: 15vw;
+}
+
+.PieImagen{
+    text-align: center;
+}
+
+#PD{
+    color: brown;
+    margin-left: 3%;
+}
+
+#Tabla{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+table{
+    margin-left: 3%;
+}
+
+th, td{
+    text-align: center;
+    border: 0.1px solid rgba(114, 114, 114, 0.116);
+}
+
+#Fila1{
+    text-align: center;
+    background-color: #223A5E;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #D49F75;
+}
+
+tr:nth-child(odd){
+    background-color: #C48F64;
+}
+
+#flex {
+    display: flex;
+    flex-flow: row;
+}
+ 
+#flex img {
+    width: 15vw;
+}
+
+figure{
+    text-align: center;
+}
+ 
+
+#Footer{
+    border-top: solid rgb(111, 111, 111) 5px;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    font-family: Versalita;
+    margin-top:4%;
+    margin-bottom:4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 2%;
+    background-color: #223A5E;
+}
+
+#Wiki{
+    color: #F6D155;
+    font-size: 1em;
+}
+
+/*Vista de Ordenador*/
+@media screen and (min-width: 768px) {
+    #Div_Principal {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "titulo titulo titulo"
+            "indice introduccion sidebar2"
+            "sidebar1 arquitectura sidebar2"
+            "sidebar1 pabellones sidebar2"
+            "sidebar1 pabellonesdestacados sidebar2"
+            "sidebar1 seguridad sidebar2"
+            "footer footer footer";
+            text-align: justify;
+    }
+   
+    #Indice {
+        margin-left: 6%;
+        width: 17vw;
+        height: fit-content;
+        padding: 1px;
+    }
+ 
+ 
+ 
+ 
+    #flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    #flex img {
+        max-width: 100%;
+    }
+   
+ }
+    
+ 
+ 
+ 
